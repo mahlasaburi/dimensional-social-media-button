@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6F7D8C;
+}
+a{
+    text-decoration: none;
+    color:#32021F;
+}
+main{
+    margin-top: 50px;
+}
+.fa,.en{
+    text-align: center;
+    font-weight: 600;;
+    color: #32021F;
+    margin-top: 20px;
+}
+.fa{
+    font-family: 'Vazirmatn', sans-serif; 
+}
+.fa span{
+    vertical-align: -8px;
+}
+.en{
+    font-family: 'Quicksand', sans-serif;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.social-media li{
+    list-style-type: none;
+    width: 210px;
+    height: 80px;
+    display: flex;
+    transition: .5s linear;
+
+}
+.social-media li a{
+    background-color: #fff;
+    margin: 0 10px;
+    width: inherit;
+    height: inherit;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    transform: rotate(-30deg) skew(25deg);
+    position: relative;
+    transition: .5s linear;
+}
+.social-media li a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background-color: #b1b1b1;
+    transform: rotate(0) skewY(-45deg);
+}
+.social-media li a::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background-color: #b1b1b1;
+    transform: rotate(0) skewX(-45deg);
+}
+.social-media li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+.social-media li:hover:nth-of-type(1) a{
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+}
+.social-media li:hover:nth-of-type(1) a::before{
+    background: linear-gradient(to top, #8a2387, #e94057, #f27121);
+}
+.social-media li:hover:nth-of-type(1) a::after{
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+}
+.social-media li:hover:nth-of-type(2) a{
+    background: linear-gradient(to right, #000000, #434343);
+}
+.social-media li:hover:nth-of-type(2) a::before{
+    background: linear-gradient(to top, #000000, #434343);
+}
+.social-media li:hover:nth-of-type(2) a::after{
+    background: linear-gradient(to right, #000000, #434343);
+}
+.social-media li:hover .icofont-github{
+    color: #fff;
+}
+.social-media li:hover:nth-of-type(3) a{
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
+.social-media li:hover:nth-of-type(3) a::before{
+    background: linear-gradient(to top, #373b44, #4286f4);
+}
+.social-media li:hover:nth-of-type(3) a::after{
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
+.social-media li:hover:nth-of-type(4) a{
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+.social-media li:hover:nth-of-type(4) a::before{
+    background: linear-gradient(to top, #fc466b, #3f5efb);
+}
+.social-media li:hover:nth-of-type(4) a::after{
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+i{
+    background-color: transparent;
+    font-size: 25px;
+    margin: 0 20px;
+    position: absolute;
+    top: 26px;
+    left: 63px;
+}
